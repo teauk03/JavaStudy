@@ -25,8 +25,14 @@ public class CardTest {
                 cards[i].num = i+1;
             }
         }
+<<<<<<< HEAD
         for (Card card : cards) {
             System.out.println("Kind: " + card.kind + ", Num: " + card.num);
+=======
+        for (int i = 0; i < cards.length; i++) {
+            String name = cards[i].kind + cards[i].num;
+            System.out.println("Card " + (i + 1) + ": " + name);
+>>>>>>> cd8f573 (CV,IV Exam)
         }
     }
 }
