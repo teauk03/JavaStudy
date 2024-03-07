@@ -1,4 +1,4 @@
-package OverloadingOverriding;
+package OverloadingOverriding.overloading;
 
 public class OverloadingExam {
     void sum(int a, int b) {
