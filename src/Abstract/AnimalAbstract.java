@@ -34,5 +34,6 @@ public class AnimalAbstract {
         GoldenRetriever Reo = new GoldenRetriever(3, "레오");
         Reo.makeSound();
         Reo.Working();
+        System.out.println(Reo.RetrieverName + "는 너무나도 영특합니다.");
     }
 }
