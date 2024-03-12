@@ -1,4 +1,5 @@
 package Polymorphism;
+// 다형성 예시 코드 (동물)
 class Animal {
     static String name = "동물";
     Animal(String name) {
