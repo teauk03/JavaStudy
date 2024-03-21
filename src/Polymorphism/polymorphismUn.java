@@ -1,13 +1,19 @@
 package Polymorphism;
+
+import java.util.ArrayList;
+
 // 다형성 예시 코드 (동물)
 class Animal {
-    static String name = "동물";
+    String name = "동물";
     Animal(String name) {
         this.name = name;
     }
 
     void makeSound() {
-        System.out.println(name + "라는 동물은 소리를 냅니다.");
+        System.out.println(this.name + "은 소리를 냅니다.");
+    }
+    void move() {
+        System.out.println(this.name + "은 움직입니다.");
     }
 }
 class Dog extends Animal {
@@ -16,19 +22,32 @@ class Dog extends Animal {
     }
     @Override
     void makeSound() {
-        System.out.println(name+ "가 멍멍 소리를 냅니다."); // 상위 클래스
+        System.out.println(name+ "라는 개가 멍멍 소리를 냅니다."); // 상위 클래스
     }
 }
 class Cat extends Animal {
     Cat(String name) {
         super(name);
     }
+    @Override
+    void makeSound() {
+        System.out.println(name + "가 야옹 소리를 냅니다.");
+    }
 }
 public class polymorphismUn {
     public static void main(String[] args) {
-        Animal CoCo = new Dog("코코"); // 상위 클래스인 Animal 클래스의 타입의 변수에 할당
-        Animal Cat = new Cat("고양이"); // 상위 클래스인 Animal 클래스의 타입의 변수에 할당
-        CoCo.makeSound(); // 상위 클래스인 Animal 클래스의 타입의 변수에 할당하여도 오버라이딩한 메서드가 있기에 Dog안에 있는 메서드가 실행된다.
-        Cat.makeSound(); //  상위 클래스에 정의 되어 있는 makeSound() 메서드가 실행된다.
+        Animal Allanimal = new Animal("모든 동물");
+        Animal CoCo = new Dog("코코");
+        Animal Cat = new Cat("고양이");
+        ArrayList<Animal> animalList = new ArrayList<Animal>();
+        animalList.add(Allanimal);
+        animalList.add(CoCo);
+        animalList.add(Cat);
+
+        for (Animal ani : animalList) {
+            ani.makeSound();
+            ani.move();
+        }
+
     }
 }
