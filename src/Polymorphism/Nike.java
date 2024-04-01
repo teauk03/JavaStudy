@@ -63,25 +63,27 @@ public class Nike extends Clothes {
     }
 
     public static void main(String[] args) {
-        Nike nike = new Nike();
+        Nike nikeProduct01 = new Nike();
         System.out.println("나이키 옷");
         System.out.println("=============");
-        nike.SetKind();
-        nike.SetColor();
-        nike.SetTemperament();
-        nike.SetBrand();
-        nike.GetAllInfo();
+        nikeProduct01.SetKind();
+        nikeProduct01.SetColor();
+        nikeProduct01.SetTemperament();
+        nikeProduct01.SetBrand(); // 브랜드 정보 설정
+        nikeProduct01.setCode(); // 코드 생성
+        nikeProduct01.getCode(); // 코드 출력
+        nikeProduct01.GetAllInfo(); // 옷의 정보와 코드 출력
 
         System.out.println("=============");
 
         System.out.println("가품 나이키 옷");
         System.out.println("=============");
-        Clothes FalseNike = new FalseNike();
-        FalseNike.SetKind();
-        FalseNike.SetColor();
-        FalseNike.SetTemperament();
-        FalseNike.SetBrand();
-        FalseNike.GetAllInfo();
+        Clothes Product01 = new FalseNike();
+        Product01.SetKind();
+        Product01.SetColor();
+        Product01.SetTemperament();
+        Product01.SetBrand();
+        Product01.GetAllInfo();
 
     }
 }
