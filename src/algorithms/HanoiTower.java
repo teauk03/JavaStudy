@@ -48,15 +48,6 @@ public class HanoiTower {
 // 기존 코드
 //  public class HanoiTower {
 //    public static void main(String[] args) {
-//        //TODO 하노이 탑 문제: 재귀적인 알고리즘의 이해
-//        // 한 번에 하나의 원반만 움직일 수 있다.
-//        // 자신보다 작은 원반이 그 아래에 놓일 수 없다.
-//
-//        // 하노이 탑은 원래 원반이 저장되어있는 기둥 1개 보조 1개 최종 1개의 형태를 가져 원반을 정해진 규칙에 맞게 저장한다.
-//
-//
-//
-//        // 우선 원반을 몇개 넣을 것인지 지정 (층)
 //        Scanner scanner = new Scanner(System.in);
 //        int n = scanner.nextInt();
 //        HanoiTowerRule(n, "원래기둥"," 보조 기둥"," 최종기둥");
