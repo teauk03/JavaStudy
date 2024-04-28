@@ -21,8 +21,8 @@ public class Main {
         // phone01.인터넷접속기능 // 불가능
         // phone01.애플기기끼리연동기능 // 불가능
 
-        // 다운 캐스팅
-        IPhone IPhone11ProMax = (IPhone) phone01;
+
+        IPhone IPhone11ProMax = (IPhone) phone01; // 다운 캐스팅
         // Phone 클래스의 참조 변수인 phone01을 IPhone 클래스의 참조 변수인 IPhone11max에 할당
         IPhone11ProMax.전화걸기기능("아이폰 11 프로 맥스 ");
         IPhone11ProMax.애플기기끼리연동기능("아이폰 11 프로 맥스 ");
