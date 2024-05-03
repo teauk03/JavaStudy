@@ -17,7 +17,7 @@ public class lInkedListExam02 {
         }
     }
     public static void main(String[] args) {
-        LinkedList<String> StringList = new LinkedList<String>();
+        LinkedList<String> StringList = new LinkedList<>();
         StringList.add("실비아");
         StringList.add("잭");
         StringList.add("칸다");
@@ -26,11 +26,12 @@ public class lInkedListExam02 {
 
         Collections.sort(StringList); // 오름차순 요소 정렬
         printList(StringList); // 정렬된 요소 출력 메서드
+        int findIndex = Collections.binarySearch(StringList, "잭"); // 정렬된 요소들 중 잭의 인덱스를 찾는 메서드
+        System.out.println("찾고자 하는 잭의 인덱스는 " + findIndex + "번째 입니다.");
 
         Collections.reverse(StringList); // 순서 반대로 바꾸기
         printList(StringList); // 요소 출력 메서드
 
-        int findIndex = Collections.binarySearch(StringList, "잭");
-        System.out.println("찾고자 하는 잭의 인덱스는 " + findIndex + "번째 입니다.");
+
     }
 }
