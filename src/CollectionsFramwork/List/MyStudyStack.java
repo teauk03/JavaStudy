@@ -8,7 +8,7 @@ public class MyStudyStack extends Vector {
         addElement(item);
         return item;
     }
-    // 요소를 LIFO 방식으로 삭제
+    // 요소를 LIFO 방식으로 요소 추출
     public Object pop() {
         Object obj = peek(); // 마지막 요소를 읽고
         removeElementAt(size()-1); // 마지막 요소를 삭제
