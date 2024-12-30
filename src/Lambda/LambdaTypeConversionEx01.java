@@ -30,5 +30,6 @@ public class LambdaTypeConversionEx01 {
         Lambda.LambdaTypeConversionEx01$$Lambda$18/0x0000007001001c88@87aac27
          **/
 
+        //
     }
 }
