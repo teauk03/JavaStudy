@@ -8,7 +8,6 @@ import java.util.function.*;
 public class LambdaEx05 {
     static int[] doSomething(IntUnaryOperator op, int[] arr){
         int[] newArr = new int[arr.length];
-
         for(int i = 0; i < newArr.length; i++) {
             newArr[i] = op.applyAsInt(arr[i]);
         }
