@@ -17,13 +17,13 @@ public class LambdaEx06 {
         Function<String, String> f2 = x->x; // 항등 함수
         System.out.println(f2.apply("AAA")); // -> "AAA" 그대로 출력
 
-        Predicate<Integer> p = i-> i<100;
-        Predicate<Integer> q = i-> i<200;
-        Predicate<Integer> r = i-> i%2 == 100;
-        Predicate<Integer> notP = p.negate(); // i>=100
+        Predicate<Integer> p = i-> i<100; // 함수 p: i<100
+        Predicate<Integer> q = i-> i<200; // 함수 q: i<200
+        Predicate<Integer> r = i-> i%2 == 100; // 함수 r: i를 2로 나누고 나머지 값이 100인가
+        Predicate<Integer> notP = p.negate(); // 함수 notP: 함수 p의 결과 값을 반전 시킴
 
-        Predicate<Integer> all = notP.and(q.or(r));
-        System.out.println(all.test(150));
+        Predicate<Integer> all = notP.and(q.or(r)); // all = notP AND (q OR r)
+        System.out.println(all.test(150)); // 150 >= 100 AND (150 < 200 OR 150 % 2 == 100), 출력: true
 
         String str1 = "abc";
         String str2 = "abc";
