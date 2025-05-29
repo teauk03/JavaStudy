@@ -1,4 +1,4 @@
-package Generices;
+package generices;
 
 import java.util.*;
 // Box1 클래스는 GenericesEx02 클래스에 정의 되어 있음

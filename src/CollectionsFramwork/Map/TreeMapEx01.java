@@ -1,4 +1,4 @@
-package CollectionsFramwork.Map;
+package collectionsFramwork.map;
 
 import java.util.*;
 

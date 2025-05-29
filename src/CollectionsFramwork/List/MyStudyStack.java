@@ -1,4 +1,4 @@
-package CollectionsFramwork.List;
+package collectionsFramwork.list;
 import java.util.*;
 
 // Stack은 백터를 상속 받아 구현함

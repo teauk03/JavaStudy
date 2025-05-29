@@ -1,4 +1,4 @@
-package CollectionsFramwork.Set;
+package collectionsFramwork.set;
 
 import java.util.*;
 

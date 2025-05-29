@@ -1,4 +1,4 @@
-package CollectionsFramwork.List;
+package collectionsFramwork.list;
 
 
 import java.util.ArrayList;

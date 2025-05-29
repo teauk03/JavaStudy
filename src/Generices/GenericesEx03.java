@@ -1,4 +1,4 @@
-package Generices;
+package generices;
 // Fruit1, Apple1, Grape1 클래스는 앞선 GenericeEx02 에 정의 되어 있음
 class Juice {
     String name;
