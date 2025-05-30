@@ -113,3 +113,8 @@ public class HelloWorld {
 * java가 아닌 타 플랫폼 언어(C/C++) 작성된 네이티브 메서드 실행 시 사용하는 스택
 * JVM이 아닌 외부 도움 받은 기능용 작업 테이블
 
+<br></br>
+<br></br>
+
+# 🚨 주의
+![alt text](<../설명사진/jVM 고려사항.png>)
